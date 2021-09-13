@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 700px;
+    background-color: #000000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+    background-color: #f8f8f8;
+    display: flex;
+    margin-top: 25px;
+    border-radius: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+p {
+    width: 50%;
+    margin-right: -50px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li a{
+    text-decoration: none;
+    color: #533e53;
+    line-height: 70px;
+}
+
+a {
+    position: relative;
+    padding: 5px;
+  }
+
+a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(54, 126, 116);
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover::before {
+    width: 100%;
+    visibility: visible;
+}
+
+img {
+    height: 120px;
+    width: 120px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+
+.row {
+    float: left;
+    margin: 30px;
+}
+
+.horizontal {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+
+
+.flex-container {
+    padding: 5px;
+    width: 150px;
+    height: 200px;
+    display: inline-block;
+    background-color: #ffffff;
+    margin: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.5s;
+}
+
+.flex-container:hover {
+    box-shadow: 5px 8px 16px 0 rgba(0, 0, 0, 0.9);
+}
+
+.btn {
+    font-size: 15px;
+    margin: 15px;
+    width: 120px;
+    padding: 15px;
+    border: none;
+    font-weight: bold;
+    outline: none;
+    border-radius: 30px;
+    background-color: #ff6347;
+    cursor: pointer;
+
+}
+
+hr {
+    width: 20%;
+    height: 0.3em;
+    background-color: #ff6347;
+    margin-left: -1px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+    body {
+        width: 100%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    h3 {
+        text-align: center;
+        display: inline;
+    }
+}
+
+
